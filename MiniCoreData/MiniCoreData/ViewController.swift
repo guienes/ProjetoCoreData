@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         }
     }
 
-    @IBAction func addName(_ sender: Any) {
+    @IBAction func addName(_ sender: Any) { //adiciona um nome
         
         let alert = UIAlertController(title: "Novo nome",
                                       message: "Adicione um novo nome",
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
           }
           
           self.save(name: nameToSave)
-          self.tableView.reloadData()
+          self.tableView.reloadData()   //atualiza table view
         }
         
         let cancelAction = UIAlertAction(title: "Cancelar",
